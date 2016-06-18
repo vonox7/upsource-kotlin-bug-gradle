@@ -10,6 +10,9 @@ object Main {
 
     @Suppress("DEPRECATION")
     deprecatedFunction() // "Hello world from a deprecated function"
+
+    val helloWorldArray = arrayOf("hello", "wwworld")
+    println(helloWorldArray[0].capitalize() + " " + helloWorldArray.get(1).drop(2)) // "Hello world"
   }
 
   @Suppress("DeprecatedCallableAddReplaceWith")
